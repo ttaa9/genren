@@ -1,23 +1,23 @@
-<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
 <style type="text/css">
 	body {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 		font-weight:300;
 		font-size:18px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 1100px;
 	}
-	
+
 	h1 {
 		font-size:32px;
 		font-weight:300;
 	}
-	
+
 	.disclaimerbox {
-		background-color: #eee;		
+		background-color: #eee;
 		border: 1px solid #eeeeee;
 		border-radius: 10px ;
 		-moz-border-radius: 10px ;
@@ -32,7 +32,7 @@
 		-moz-border-radius: 10px ;
 		-webkit-border-radius: 10px ;
 	}
-	
+
 	img.header-img {
 		height: 140px;
 		border: 1px solid black;
@@ -40,14 +40,14 @@
 		-moz-border-radius: 10px ;
 		-webkit-border-radius: 10px ;
 	}
-	
+
 	img.rounded {
 		border: 1px solid #eeeeee;
 		border-radius: 10px ;
 		-moz-border-radius: 10px ;
 		-webkit-border-radius: 10px ;
 	}
-	
+
 	a:link,a:visited
 	{
 		color: #1367a7;
@@ -56,13 +56,13 @@
 	a:hover {
 		color: #208799;
 	}
-	
+
 	td.dl-link {
 		height: 160px;
 		text-align: center;
 		font-size: 22px;
 	}
-	
+
 	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
 		box-shadow:
 		0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
@@ -101,13 +101,13 @@
 		margin-right: 30px;
 		margin-bottom: 5px;
 	}
-	
+
 	.vert-cent {
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
+
 	hr
 	{
 		border: 0;
@@ -118,14 +118,14 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
-	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
-	<meta property="og:description" content="Paper description." />
+	<title>Cycle-Consistent Generative Rendering for 2D-3D Modality Translation</title>
+	<meta property="og:image" content="teaser.gif"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+	<meta property="og:title" content="Cycle-Consistent Generative Rendering for 2D-3D Modality Translation." />
+	<meta property="og:description" content="Method for learning translator mappings between 2D and 3D from unpaired data, via cycle-consistent domain translation techniques." />
 
 	<!-- Get from Google Analytics -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src=""></script> 
+	<script async src=""></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -138,23 +138,33 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">Cycle-Consistent Generative Rendering for 2D-3D Modality Translation</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="https://www.cs.toronto.edu/~taumen/">Tristan Aumentado-Armstrong</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=7EFMKWUAAAAJ&hl=en">Alex Levinshtein</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="http://tsogkas.github.io/">Stavros Tsogkas</a></span>
+						</center>
+					</td>
+                    <td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://www.cs.ryerson.ca/kosta/">Konstantinos Derpanis</a></span>
+						</center>
+					</td>
+                    <td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://scholar.google.com/citations?user=mYVIS8QAAAAJ&hl=en">Allan Jepson</a></span>
 						</center>
 					</td>
 				</tr>
@@ -168,7 +178,17 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/ttaa9/genren'>[GitHub]</a></span><br>
+						</center>
+					</td>
+                    <td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href=''>[Poster]</a></span><br>
+						</center>
+					</td>
+                    <td align=center width=120px>
+						<center>
+							<span style="font-size:24px"><a href=''>[Slides]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -181,18 +201,18 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:500px" src="./resources/teaser.gif"/>
 					</center>
 				</td>
 			</tr>
 		</table>
-		<table align=center width=850px>
+		<!-- <table align=center width=850px>
 			<tr>
 				<td>
 					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
 				</td>
 			</tr>
-		</table>
+		</table> -->
 	</center>
 
 	<hr>
@@ -201,7 +221,7 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				For humans, visual understanding is inherently generative: given a 3D shape, we can postulate how it would look in the world; given a 2D image, we can infer the 3D structure that likely gave rise to it. We can thus translate between the 2D visual and 3D structural modalities of a given object. In the context of computer vision, this corresponds to a learnable module that serves two purposes: (i) generate a realistic rendering of a 3D object (shape-to-image translation) and (ii) infer a realistic 3D shape from an image (image-to-shape translation). In this paper, we learn such a module while being conscious of the difficulties in obtaining large paired 2D-3D datasets. By leveraging generative domain translation methods, we are able to define a learning algorithm that requires only weak supervision, with unpaired data. The resulting model is not only able to perform 3D shape, pose, and texture inference from 2D images, but can also generate novel textured 3D shapes and renders, similar to a graphics pipeline. More specifically, our method (i) infers an explicit 3D mesh representation, (ii) utilizes example shapes to regularize inference, (iii) requires only an image mask (no keypoints or camera extrinsics), and (iv) has generative capabilities. While prior work explores subsets of these properties, their combination is novel. We demonstrate the utility of our learned representation, as well as its performance on image generation and unpaired 3D shape inference tasks.
 			</td>
 		</tr>
 	</table>
@@ -210,21 +230,22 @@
 	<hr>
 	<center><h1>Talk</h1></center>
 	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fXqM1veNwVc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<!-- <iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe> -->
 	</p>
 
 	<table align=center width=800px>
 		<br>
 		<tr>
 			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
+				<span style="font-size:28px"><a href='https://youtu.be/flwr2KdByfM'>[Short Version]</a>
 				</span>
 			</center>
 		</tr>
 	</table>
 	<hr>
 
-	<center><h1>Code</h1></center>
+	<center><h1>Overview</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -247,7 +268,15 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					Our method simultaneously learns a <i>render generator</i> and a <i>3D inferrer</i> from unpaired data.
+                    The former probabilistically samples 3D texture and pose, conditioned on an input shape, followed by rendering (similar to a graphics pipeline);
+                    the latter infers a <i>graphics code</i> descriptor of a 3D object from a 2D image, including rigid pose, mesh shape, and texture (acting as a computer vision algorithm).
+                    Analogous to the domain translation literature,
+                        which inspired our cycle-consistent distribution-matching training formulation (depicted above),
+                        we term these mappings our <i>shape-to-image</i> and <i>image-to-shape</i> translations, respectively,
+                        which permit moving between the 2D and 3D modalities of an object.
+                    These functions allow generative image modelling and single-image 3D reconstruction,
+                        but also facilitate learning of a smooth, factorized, and manipulable latent object representation.
 				</td>
 			</tr>
 		</center>
@@ -257,17 +286,18 @@
 		<tr><center>
 			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
 			</center>
-		</span>
+		<!-- </span> -->
 	</table>
 	<br>
 	<hr>
 	<table align=center width=450px>
-		<center><h1>Paper and Supplementary Material</h1></center>
+		<center><h1>Paper</h1></center>
 		<tr>
-			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
+			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paperttaa.png"/></a></td>
+			<td><span style="font-size:14pt"> Tristan Aumentado-Armstrong, Alex Levinshtein, Stavros Tsogkas, Konstantinos Derpanis, and Allan Jepson <br>
+				<b>Cycle-Consistent Generative Rendering for 2D-3D Modality Translation.</b><br>
+                <i>Samsung AI Centre Toronto</i><br>
+				In 3DV, 2020 (Oral).<br>
 				(hosted on <a href="">ArXiv</a>)<br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
 				<span style="font-size:4pt"><a href=""><br></a>
@@ -302,4 +332,3 @@
 <br>
 </body>
 </html>
-

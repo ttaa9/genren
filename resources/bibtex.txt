@@ -1,6 +1,6 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@article{aumentado2020cycle,
+  title={Cycle-Consistent Generative Rendering for 2D-3D Modality Translation},
+  author={Aumentado-Armstrong, Tristan and Levinshtein, Alex and Tsogkas, Stavros and Derpanis, Konstantinos G and Jepson, Allan D},
+  journal={International Conference on 3D Vision (3DV)},
+  year={2020}
 }
